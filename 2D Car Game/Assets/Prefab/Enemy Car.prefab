@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9015358852385792272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4400742931732958753}
+  - component: {fileID: 4841347712729197836}
+  - component: {fileID: 9184809722848173241}
+  - component: {fileID: -4758794912970056443}
+  - component: {fileID: 406069377642763060}
+  m_Layer: 0
+  m_Name: Enemy Car
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4400742931732958753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015358852385792272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -1.85, z: 0}
+  m_LocalScale: {x: 0.4369493, y: 0.4721797, z: 0.70735323}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &4841347712729197836
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015358852385792272}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 20bba82056ee9554fab3f68e7d5d3a02, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.97, y: 3.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!60 &9184809722848173241
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015358852385792272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.97, y: 3.4}
+    newSize: {x: 1.97, y: 3.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.84499997, y: -1.18}
+      - {x: 0.84499997, y: -0.26}
+      - {x: 0.91499996, y: -0.29}
+      - {x: 0.98499995, y: -0.17}
+      - {x: 0.98499995, y: -0.02}
+      - {x: 0.85499996, y: 0.07}
+      - {x: 0.84499997, y: 1.28}
+      - {x: 0.815, y: 1.38}
+      - {x: 0.615, y: 1.5799999}
+      - {x: 0.505, y: 1.61}
+      - {x: 0.275, y: 1.64}
+      - {x: 0.235, y: 1.67}
+      - {x: -0.285, y: 1.67}
+      - {x: -0.585, y: 1.63}
+      - {x: -0.79499996, y: 1.4699999}
+      - {x: -0.805, y: 0.04}
+      - {x: -0.935, y: 0.089999996}
+      - {x: -0.965, y: 0.03}
+      - {x: -0.965, y: -0.049999997}
+      - {x: -0.895, y: -0.16}
+      - {x: -0.805, y: -0.21}
+      - {x: -0.825, y: -0.85999995}
+      - {x: -0.78499997, y: -1.18}
+      - {x: -0.615, y: -1.4}
+      - {x: -0.415, y: -1.5999999}
+      - {x: -0.185, y: -1.6999999}
+      - {x: 0.295, y: -1.6999999}
+      - {x: 0.515, y: -1.5899999}
+      - {x: 0.615, y: -1.52}
+      - {x: 0.775, y: -1.35}
+--- !u!114 &-4758794912970056443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015358852385792272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93d2537018fb34da0e04fd5ac59e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  enemyLaserPrefab: {fileID: 8014934415127264544, guid: b82f8b51771094948877ab14b59c5324, type: 3}
+  enemyLaserSpeed: 5
+--- !u!114 &406069377642763060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015358852385792272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b090a0f2e2f584c8d6af2c41ea7316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointsList: []
+  waveConfig: {fileID: 11400000, guid: 936b237bd6da822418920d5db863149c, type: 2}
