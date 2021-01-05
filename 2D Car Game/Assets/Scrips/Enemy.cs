@@ -18,8 +18,6 @@ public class Enemy : MonoBehaviour
     //gameObject that has a DamageDealer component
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
-        //access DamageDealer from ptherObject that hit the enemy
-        //and reduce health accordingly
         DamageDealer dmg = otherObject.gameObject.GetComponent<DamageDealer>();
 
         ProcessHit(dmg);

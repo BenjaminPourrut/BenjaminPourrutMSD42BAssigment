@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     //amkes the variable editable from unity
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float health = 100;
 
     float xMin, xMax, yMin, yMax;
 
@@ -23,6 +24,23 @@ public class Player : MonoBehaviour
     {
         Move();
     }
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        DamageDealer dmg = otherObject.gameObject.GetComponent<DamageDealer>();
+
+        ProcessHit(dmg);
+    }
+
+    private void ProcessHit(DamageDealer dmg)
+    {
+        health -= dmg.GetDamage();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void setUpMoveBoundaries()
     {
         //setup the boundaries of movement according to the camera
@@ -47,13 +65,6 @@ public class Player : MonoBehaviour
 
         newXPos = Mathf.Clamp(newXPos, xMin, xMax);
 
-        //the same as said above on the y-axis
-        var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        var newYPos = transform.position.y + deltaY;
-
-        newYPos = Mathf.Clamp(newYPos, yMin, yMax);
-
-        //move the Player Car on the x-axis (newXPos)
-        transform.position = new Vector2(newXPos, newYPos);
+        transform.position = new Vector2(newXPos,-6);
     }
 }
