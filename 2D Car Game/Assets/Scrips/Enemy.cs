@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject enemyLaserPrefab;
     [SerializeField] float enemyLaserSpeed = 5f;
 
-    //reduce enemy health whenever anmy collodes with a
+    //Reduces enemy health when the enemy collodes with a
     //gameObject that has a DamageDealer component
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
@@ -47,14 +47,14 @@ public class Enemy : MonoBehaviour
 
     private void CountDownAndShoot()
     {
-        //reduce time every frame
+        //Reduce of the time every frame
         shotCounter -= Time.deltaTime;
 
         if (shotCounter <= 0f)
         {
-            //enemy shoots
+            //Enemy shoots
             EnemyFire();
-            //reset shotCounter timer
+            //Reset shotCounter timer
             shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
         }
     }
@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
     private void EnemyFire()
     {
         GameObject laser = Instantiate(enemyLaserPrefab, transform.position, Quaternion.identity) as GameObject;
-        //give the laser a velocity in the y-axis
+        //Give the laser a velocity in the y-axis
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -enemyLaserSpeed);
     }
 }

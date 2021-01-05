@@ -5,17 +5,17 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Enemy Wave Config")]
 public class WaveConfig : ScriptableObject
 {
-    //the enemy sprite]
+    //The enemy sprite it self
     [SerializeField] GameObject enemyPrefab;
-    //the path to follow
+    //The path to follow
     [SerializeField] GameObject pathPrefab;
-    //time between ennemy spawn
+    //Time inbetween enemy spawn generation
     [SerializeField] float timeBetweenSpawns = 0.5f;
-    //random time difference between spawns
+    //Random time difference between spawns
     [SerializeField] float spawnRandomfactor = 0.3f;
-    //number of enemies in wave
+    //Total number of enemies in wave
     [SerializeField] int numberOfEnemies = 5;
-    //enemy movment speed
+    //Enemy movment speed
     [SerializeField] float enemyMoveSpeed = 2f;
 
     public GameObject GetEnemyPrefab()
@@ -25,20 +25,13 @@ public class WaveConfig : ScriptableObject
 
     public List<Transform> GetWaypointsList()
     {
-        //eace wage can have different number of waypoints
+        //Each wave is able to have different number of waypoints
         var waveWaypoints = new List<Transform>();
 
-        //access the path prefeb, read each waypoints and add it to  ther List waveWaypoints
+        //Access the path prefeb, each waypoints is read and the added to the List waveWaypoints
         foreach (Transform child in pathPrefab.transform)
         {
             waveWaypoints.Add(child);
-
-            /* waveWayP{oints:
-             * 
-             * [0]: waypoints 0
-             * [1]: waypoints 1
-             * [2]: waypoints 2
-             */
         }
 
         return waveWaypoints;

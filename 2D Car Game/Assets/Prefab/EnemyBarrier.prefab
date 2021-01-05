@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3810287834523197690}
   - component: {fileID: -3452731962277165761}
   - component: {fileID: -4668587660017517918}
+  - component: {fileID: -2902939699285294247}
   m_Layer: 9
   m_Name: EnemyBarrier
   m_TagString: Untagged
@@ -94,7 +95,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -247,3 +248,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypointsList: []
   waveConfig: {fileID: 11400000, guid: d5df38ec1737ba44b9edd84ae98f927e, type: 2}
+--- !u!114 &-2902939699285294247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956694097237280042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce123b8a86cbdd4a936e4c22172a549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 4

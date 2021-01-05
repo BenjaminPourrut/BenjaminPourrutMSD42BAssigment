@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //amkes the variable editable from unity
+    //Makes the variable editable from unity
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float health = 100;
 
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
     private void setUpMoveBoundaries()
     {
-        //setup the boundaries of movement according to the camera
+        //According to the camera it will setup the boundaries of movement
         Camera gameCamera = Camera.main;
 
 
@@ -56,8 +56,8 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        //var is a generic varaible which chnanges its type according to value
-        //deltaX is the difference the Player Ship moves in the  x-axis
+        //var is a universal varaible which changes it's type according to value
+        //The difference of the Player Ship moves in the x-axis is deltaX
         var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
 
         //newXPosition = current pos in x = difference moved in x-axis
