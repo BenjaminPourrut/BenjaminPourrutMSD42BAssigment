@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8978072014921444587}
   - component: {fileID: 8978072014921444589}
   - component: {fileID: 7122640002363040884}
+  - component: {fileID: 3890626100909516320}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -108,7 +109,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -161,3 +162,16 @@ PolygonCollider2D:
       - {x: 0.44, y: -2.19}
       - {x: 0.72999996, y: -2.18}
       - {x: 0.96999997, y: -2.1}
+--- !u!114 &3890626100909516320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978072014921444584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce123b8a86cbdd4a936e4c22172a549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d93d2537018fb34da0e04fd5ac59e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ce123b8a86cbdd4a936e4c22172a549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 1
 --- !u!50 &5954642344210401430
 Rigidbody2D:
   serializedVersion: 4

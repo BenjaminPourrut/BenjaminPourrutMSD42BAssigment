@@ -37,6 +37,7 @@ public class WaveConfig : ScriptableObject
         return waveWaypoints;
     }
 
+    //calling all Serialized Fields from methods
     public float GetTimeBetweenSpawns()
     {
         return timeBetweenSpawns;

@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     {
         Move();
     }
+    //Reduces enemy health when the enemy collodes with a
+    //gameObject that has a DamageDealer component
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
         DamageDealer dmg = otherObject.gameObject.GetComponent<DamageDealer>();
