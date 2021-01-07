@@ -7,14 +7,14 @@ public class BackgroundScroller : MonoBehaviour
 
     [SerializeField] float backgroundScrollSpeed = 0.02f;
 
-    Material MyOwnMaterial;
+    Material MyMaterial;
 
     Vector2 offSet;
 
     // Start is called before the first frame update
     void Start()
     {
-        MyOwnMaterial = GetComponent<Renderer>().material;
+        MyMaterial = GetComponent<Renderer>().material;
 
         offSet = new Vector2(0f, backgroundScrollSpeed);
     }
@@ -22,6 +22,6 @@ public class BackgroundScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MyOwnMaterial.mainTextureOffset += offSet * Time.deltaTime;
+        MyMaterial.mainTextureOffset += offSet * Time.deltaTime;
     }
 }

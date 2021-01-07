@@ -10,14 +10,14 @@ public class Player : MonoBehaviour
 
     float xMin, xMax, yMin, yMax;
 
-    float padding = 0.6f;
+    float padding1 = 0.6f;
     float padding2 = 1.0f;
     //Coroutine printCoroutine;
 
     // Start is called before the first frame update
     void Start()
     {
-        setUpMoveBoundaries();
+        MoveBoundaries();
     }
     // Update is called once per frame
     void Update()
@@ -43,15 +43,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void setUpMoveBoundaries()
+    private void MoveBoundaries()
     {
         //According to the camera it will setup the boundaries of movement
         Camera gameCamera = Camera.main;
 
 
-        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
+        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding1;
 
-        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
+        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding1;
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding2;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 00)).y - padding2;
     }
