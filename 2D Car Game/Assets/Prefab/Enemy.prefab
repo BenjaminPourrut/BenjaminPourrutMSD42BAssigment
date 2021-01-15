@@ -105,6 +105,8 @@ MonoBehaviour:
   maxTimeBetweenShots: 3
   enemyLaserPrefab: {fileID: 8014934415127264544, guid: b82f8b51771094948877ab14b59c5324, type: 3}
   enemyLaserSpeed: 5
+  elliminationVFX: {fileID: 189525769083007993, guid: 69cae05f8b177924697861333a142c39, type: 3}
+  explosionDuration: 1
 --- !u!114 &2647912628888745198
 MonoBehaviour:
   m_ObjectHideFlags: 0

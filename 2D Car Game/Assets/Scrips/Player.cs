@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float health = 100;
 
+    [SerializeField] AudioClip PlayerHealthReduced;
+    [SerializeField] [Range(0, 1)] float PlayerHealthReduction = 0.75f;
+
     float xMin, xMax, yMin, yMax;
 
     float padding1 = 0.6f;
@@ -37,6 +40,8 @@ public class Player : MonoBehaviour
     {
         health -= dmg.GetDamage();
 
+        AudioSource.PlayClipAtPoint(PlayerHealthReduced, Camera.main.transform.position, PlayerHealthReduction);
+
         if (health <= 0)
         {
             Die();
@@ -47,7 +52,7 @@ public class Player : MonoBehaviour
     {
         Destroy(gameObject);
 
-
+        AudioSource.PlayClipAtPoint(PlayerHealthReduced, Camera.main.transform.position, PlayerHealthReduction);
 
         FindObjectOfType<Level>().LoadGameOver();
     }

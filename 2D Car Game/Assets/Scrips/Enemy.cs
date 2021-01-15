@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject enemyLaserPrefab;
     [SerializeField] float enemyLaserSpeed = 5f;
 
+    [SerializeField] GameObject elliminationVFX;
+    [SerializeField] float explosionDuration = 1f;
+
     //Reduces enemy health when the enemy collodes with a
     //gameObject that has a DamageDealer component
     private void OnTriggerEnter2D(Collider2D otherObject)
@@ -29,8 +32,18 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        //this will eliminate the enemy permanintly
+        Destroy(gameObject);
+        //start of the explosion effects
+        GameObject explosion = Instantiate(elliminationVFX, transform.position, Quaternion.identity);
+        //destruction after a Second (1sec)
+        Destroy(explosion, explosionDuration);
     }
 
     // Start is called before the first frame update

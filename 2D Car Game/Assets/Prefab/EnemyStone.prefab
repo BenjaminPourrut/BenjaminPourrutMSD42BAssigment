@@ -213,3 +213,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  elliminationVFX: {fileID: 189525769083007993, guid: 69cae05f8b177924697861333a142c39, type: 3}
+  explosionDuration: 1
