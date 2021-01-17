@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     //Makes the variable editable from unity
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] float health = 100;
+    [SerializeField] int health = 50;
 
     [SerializeField] AudioClip PlayerHealthReduced;
     [SerializeField] [Range(0, 1)] float PlayerHealthReduction = 0.75f;
@@ -29,6 +29,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
     //Reduces enemy health when the enemy collodes with a
     //gameObject that has a DamageDealer component
