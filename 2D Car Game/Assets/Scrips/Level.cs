@@ -21,11 +21,17 @@ public class Level : MonoBehaviour
     {
         //This will load the game with the scene name of 2DCarGame
         SceneManager.LoadScene("2DCarGame");
+        //This will restart the game setion with the points included
+        FindObjectOfType<GameSession>().ResetGame();
     }
     public void LoadGameOver()
     {
         //This will load the Game Over scene
         SceneManager.LoadScene("GameOver");
+    }
+    public void LoadWinner()
+    {
+        SceneManager.LoadScene("Winner");
     }
     public void QuitGame()
     {

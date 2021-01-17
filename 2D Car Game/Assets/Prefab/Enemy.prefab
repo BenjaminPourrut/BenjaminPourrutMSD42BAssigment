@@ -107,6 +107,7 @@ MonoBehaviour:
   enemyLaserSpeed: 5
   elliminationVFX: {fileID: 189525769083007993, guid: 69cae05f8b177924697861333a142c39, type: 3}
   explosionDuration: 1
+  scoreValue: 5
 --- !u!114 &2647912628888745198
 MonoBehaviour:
   m_ObjectHideFlags: 0

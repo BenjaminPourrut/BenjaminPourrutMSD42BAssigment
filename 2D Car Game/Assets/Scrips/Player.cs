@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip PlayerHealthReduced;
     [SerializeField] [Range(0, 1)] float PlayerHealthReduction = 0.75f;
 
+    [SerializeField] GameObject elliminationVFX;
+    [SerializeField] float explosionDuration = 1f;
+
     float xMin, xMax, yMin, yMax;
 
     float padding1 = 0.6f;
@@ -55,6 +58,11 @@ public class Player : MonoBehaviour
         AudioSource.PlayClipAtPoint(PlayerHealthReduced, Camera.main.transform.position, PlayerHealthReduction);
 
         FindObjectOfType<Level>().LoadGameOver();
+
+        //start of the explosion effects
+        GameObject explosion = Instantiate(elliminationVFX, transform.position, Quaternion.identity);
+        //destruction after a Second (1sec)
+        Destroy(explosion, explosionDuration);
     }
 
     private void MoveBoundaries()

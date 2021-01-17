@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8978072014921444587}
   - component: {fileID: 8978072014921444589}
   - component: {fileID: 7122640002363040884}
-  - component: {fileID: 3890626100909516320}
+  - component: {fileID: -7019910163602238628}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -99,6 +99,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   health: 50
+  PlayerHealthReduced: {fileID: 0}
+  PlayerHealthReduction: 0.75
+  elliminationVFX: {fileID: 0}
+  explosionDuration: 1
 --- !u!60 &7122640002363040884
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +166,7 @@ PolygonCollider2D:
       - {x: 0.44, y: -2.19}
       - {x: 0.72999996, y: -2.18}
       - {x: 0.96999997, y: -2.1}
---- !u!114 &3890626100909516320
+--- !u!114 &-7019910163602238628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
