@@ -29,13 +29,6 @@ public class EnemyNoLaser : MonoBehaviour
             Die();
         }
     }
-    public void Winner()
-    {
-        if (scoreValue >= 100)
-        {
-            FindObjectOfType<Level>().LoadWinner();
-        }
-    }
 
     private void Die()
     {
@@ -58,6 +51,5 @@ public class EnemyNoLaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Winner();
     }
 }
