@@ -14,7 +14,7 @@ public class GameSession : MonoBehaviour
     //this will make sure that only 1 GameSession is running
     private void SetUpSingleton()
     {
-        int numberOfGameSessions = FindObjectsOfType<GameSession>().Length;
+        int numberOfGameSessions = FindObjectsOfType(GetType()).Length;
 
         if (numberOfGameSessions > 1)
         {
@@ -42,11 +42,15 @@ public class GameSession : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Update()
+    /*public void Winner()
     {
         if (score >= 100)
         {
             FindObjectOfType<Level>().LoadWinner();
         }
+    }*/
+
+    void Update()
+    {
     }
 }
