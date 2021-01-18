@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2902939699285294247}
   - component: {fileID: -205975902043050051}
   - component: {fileID: -5844667272008102233}
+  - component: {fileID: -273078773835261446}
   m_Layer: 9
   m_Name: EnemyBarrier
   m_TagString: Untagged
@@ -299,3 +300,17 @@ MonoBehaviour:
   health: 50
   elliminationVFX: {fileID: 189525769083007993, guid: 69cae05f8b177924697861333a142c39, type: 3}
   explosionDuration: 1
+  scoreValue: 5
+--- !u!114 &-273078773835261446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956694097237280042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fba78872780fbc408b3c11ddda248e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 5

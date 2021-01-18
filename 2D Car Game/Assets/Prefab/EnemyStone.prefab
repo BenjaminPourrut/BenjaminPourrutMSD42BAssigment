@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1108686100610290469}
   - component: {fileID: 1813344695751178685}
   - component: {fileID: 549137552077267245}
+  - component: {fileID: 8689397545582303256}
   m_Layer: 9
   m_Name: EnemyStone
   m_TagString: Untagged
@@ -215,3 +216,17 @@ MonoBehaviour:
   health: 50
   elliminationVFX: {fileID: 189525769083007993, guid: 69cae05f8b177924697861333a142c39, type: 3}
   explosionDuration: 1
+  scoreValue: 5
+--- !u!114 &8689397545582303256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5953363100622211226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fba78872780fbc408b3c11ddda248e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 5

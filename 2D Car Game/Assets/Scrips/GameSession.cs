@@ -37,13 +37,16 @@ public class GameSession : MonoBehaviour
         score += scoreValue;
     }
 
-    public void SubToScore(int scoreValue)
-    {
-        score -= scoreValue;
-    }
-
     public void ResetGame()
     {
         Destroy(gameObject);
+    }
+
+    void Update()
+    {
+        if (score >= 100)
+        {
+            FindObjectOfType<Level>().LoadWinner();
+        }
     }
 }

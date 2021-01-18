@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 406069377642763060}
   - component: {fileID: 3256830453640644418}
   - component: {fileID: 6692757071648669636}
+  - component: {fileID: -7314127702152104386}
   m_Layer: 9
   m_Name: Enemy Car
   m_TagString: Untagged
@@ -211,3 +212,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7314127702152104386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015358852385792272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fba78872780fbc408b3c11ddda248e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 5

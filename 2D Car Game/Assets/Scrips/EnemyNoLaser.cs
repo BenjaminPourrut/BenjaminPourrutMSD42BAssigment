@@ -47,9 +47,6 @@ public class EnemyNoLaser : MonoBehaviour
         
         //destruction after a Second (1sec)
         Destroy(explosion, explosionDuration);
-
-        //this will add scoreValue to GameSession score
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
     }
 
     // Start is called before the first frame update
