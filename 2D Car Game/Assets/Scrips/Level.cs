@@ -23,12 +23,14 @@ public class Level : MonoBehaviour
         //This will load the game with the scene name of 2DCarGame
         SceneManager.LoadScene("2DCarGame");
 
-        print("test 1");
-
         //This will restart the game setion with the points included
         FindObjectOfType<GameSession>().ResetGame();
+    }
 
-        print("test 2");
+    public void LoadGame2()
+    {
+        //This will load the game with the scene name of 2DCarGame
+        SceneManager.LoadScene("2DCarGame");
     }
     public void LoadGameOver()
     {
